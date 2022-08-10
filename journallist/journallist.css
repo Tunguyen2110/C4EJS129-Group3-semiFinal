@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.journal-list-main {
+    display: flex;
+    justify-content: space-around;
+}
+.journal-list-mainbar {
+    width: 60%;
+    margin-left: 1rem;
+}
+.journal-list-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border-radius */
+    box-shadow: 0.1rem 0.2rem rgba(136,136,136,0.5);
+    margin-bottom: 1em;
+}
+.journal-list-content:hover {
+    transform: scale(1.05);
+}
+.journal-list-content img{
+    width: 20%;
+    border-radius: 5%;
+}
+.detail-list {
+    width: 60%;
+    padding-left: 1rem;
+}
+.action-list {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-list input{
+    transform: scale(1.6);
+}
+
+.action-list i{
+    font-size: 1.3rem;
+}
+
+
+/* right sidebar */
+.journal-list-sidebar{
+    width: 30%;
+    background-color: olive;
+}
+
+/* Progress bar  */
+.progress {
+    /* position: fixed; */
+    
+}
