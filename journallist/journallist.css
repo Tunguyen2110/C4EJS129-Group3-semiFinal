@@ -17,9 +17,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border-radius */
+    border-radius: 8px;
     box-shadow: 0.1rem 0.2rem rgba(136,136,136,0.5);
     margin-bottom: 1em;
+    -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .3);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
 }
 .journal-list-content:hover {
     transform: scale(1.05);
@@ -54,7 +60,8 @@
 }
 
 /* Progress bar  */
-.progress {
-    /* position: fixed; */
-    
+.progress-bar::-moz-progress-bar {
+    background: #4d4e20;
+
 }
+
