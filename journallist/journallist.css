@@ -6,6 +6,7 @@
 .journal-list-main {
     display: flex;
     justify-content: space-around;
+    margin-top: 3rem;
 }
 .journal-list-mainbar {
     width: 60%;

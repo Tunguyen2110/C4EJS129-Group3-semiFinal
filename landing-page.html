@@ -17,15 +17,14 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Lato:ital,wght@1,100&family=League+Gothic&family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;500&family=Open+Sans:wght@300;500&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../media/pine-tree.ico">
     <title>Đà Lạt nè :3</title>
-
 </head>
 
 <body>
     <!-- navbar -->
 
-    <head class="header">
+    <div class="header" id="header">
         <div class="navbar">
-          <!-- Logo on the left side of the Navigator bar: -->
+            <!-- Logo on the left side of the Navigator bar: -->
           <div class="navbar-logo">
             <img src="./media/Logo-Dalatne-05.svg" alt="Logo" />
           </div>
@@ -33,32 +32,34 @@
           <!-- <div class="navbar-menu"> -->
             <ul class="menu-container">
               <li class="navbar-menu-container-list">
-                <a href="./mainpage/index.html" style="text-decoration: none; color: inherit;">Home</a>
-              </li>
-              <li class="navbar-menu-container-list">
-                <a href="#features-section">Features</a> 
+              <a href="./mainpage/mainpage.html">Home</a>
             </li>
-              <li class="navbar-menu-container-list">
-                <a href="#whereToGo-section" >Where to Go</a>
+            
+            <li class="navbar-menu-container-list">
+              <a href="#features-section">Features</a>
             </li>
-              <li class="navbar-menu-container-list">
-                <a href="#footer">About us</a>
-              </li>
-            </ul>
-          <!-- </div> -->
+            
+            <li class="navbar-menu-container-list">
+              <a href="#whereToGo-section">Where to Go</a>
+            </li>
   
+            <li class="navbar-menu-container-list">
+              <a href="#footer">About us</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+          
           <div class="navbar-login-form">
             <button type="button" class="btn btn-login">Login</button>
             <button type="button" class="btn btn-register">Register</button>
-            <button type="button" class="btn btn-checklist"><i class="bi bi-card-checklist"></i></button>
           </div>
-        </div>
+        <!-- navbar -->
 
-        <div class="video-container">
-            <video class="introvideo" autoplay loop controls src="./media/dalathoanghon.mp4">
-            </video>
-        </div>
-    </head>
+    </div>
+    <div class="video-container">
+        <video class="introvideo" autoplay loop controls src="./media/dalathoanghon.mp4">
+        </video>
+    </div>
     <!-- end of navbar -->
 
     <main>
@@ -172,7 +173,6 @@
     </main>
 
 
-
     <footer id="footer">
         <hr>
         <img class="footer-logo" src="./media/footer/Logo-Dalatne-05-footer.svg" alt="logo" style="max-width: 50%;">
@@ -205,7 +205,7 @@
 
 
 </body>
-
+<script src="landing-page.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

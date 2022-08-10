@@ -1,0 +1,182 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Logo on the left side of the Navigator bar: -->
+<div class="navbar-logo">
+    <img src="Logo-Dalatne-05.svg" alt="Logo" />
+</div>
+  <!-- main list of Nav-bar at the center -->
+
+  <!-- <div class="navbar-menu"> -->
+    <ul class="menu-container">
+      <li class="navbar-menu-container-list">
+      <a href="./mainpage/index.html">Home</a>
+        </li>
+    
+        <li class="navbar-menu-container-list">
+        <a href="#features-section">Features</a>
+        </li>
+        
+        <li class="navbar-menu-container-list">
+        <a href="#whereToGo-section">Where to Go</a>
+        </li>
+
+        <li class="navbar-menu-container-list">
+        <a href="#footer">About us</a>
+        </li>
+    </ul>
+  <!-- </div> -->
+
+  <div class="navbar-login-form">
+    <button type="button" class="btn btn-login">Login</button>
+    <button type="button" class="btn btn-register">Register</button>
+    <button type="button" class="btn btn-checklist">
+      <i class="fa-solid fa-motorcycle"></i></i>
+    </button>
+  </div>
+<!-- navbar -->
+
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 234);
+  font-family: "Raleway", sans-serif;
+  /* background-color: rgba(253, 226, 177, 0.34); */
+  scroll-behavior: smooth;
+}
+body hr {
+  border-top: 2px dashed ;
+  color: #0A3A3F;
+}
+
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.navbar {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  max-height: 80px;
+  width: 100%;
+  background-color: rgba(77, 78, 32,0.6);
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 15%;
+}
+.navbar-logo img {
+  /* height: 90%; */
+  width: auto;
+  max-height: 70px;
+  /* padding-bottom: 6%; */
+  padding: 3% 3% 8% 5%;
+}
+/* center */
+
+.menu-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  /* width: 65%; */
+  flex-grow: 2;
+  padding-left: 10%;
+  line-height: 4em;
+}
+
+.menu-container li {
+  display: flex;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: larger;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding: 0 2%;
+  cursor: pointer;
+}
+.menu-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-container li:hover {
+  background: rgba(19, 22, 14, 0.6);
+}
+
+.navbar-login-form {
+  width: 20%;
+  float: right;
+  padding-right: 1%;
+}
+
+/* right  */
+.navbar-login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  appearance: none;
+  backface-visibility: hidden;
+  /* background-color: #72B081; */
+  background-color: #FFF7D0;
+
+  border-radius: 9px;
+  border-style: none;
+  color: #4d4e20;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 10px 15px;
+  /* position: relative; */
+  margin-right: 0.1em;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.btn-login:hover {
+  background: rgba(61, 50, 50,0.9);
+  color: white;
+  font-style: bold;
+  /* background-color: #1e8449; */
+  /* opacity: 1; */
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+.btn-register {
+  /* background: rgba(128, 172, 220, 0.7); */
+  background: rgb(71, 82, 140);
+  color: white;
+}
+.btn-register:hover {
+  background: rgba(248, 154, 12, 0.9);
+  /* background: rgb(228, 124, 51); */
+}
+.btn-checklist i:hover{
+  color:rgb(71, 82, 140);
+}
+</style>

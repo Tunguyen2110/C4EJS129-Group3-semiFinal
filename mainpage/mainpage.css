@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(253, 226, 177, 0.34);
+    color: #0A3A3F;
+}
+/* sort and filter CSS */
+.container-item-location {
+    background: white;
+    margin-top: 0;
+    min-height: 100px;
+    padding: 2%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5% 5% rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 5% 5% rgba(0, 0, 0, .2);
+}
+
+.container-item-location-ul {
+    overflow: hidden;
+    /* gap: 15px; */
+    list-style-type: none;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.container-item-location a {
+    text-decoration: none;
+    width: 110px;
+}
+
+.container-item-location-li {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid rgba(7, 7, 7, 0.3);
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.container-item-location-li:hover {
+    background: #6b8175;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+
+.container-item-main {
+    flex: 1 1 70%;
+    border: 3px solid lightgrey;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 0px 0 15px 15px;
+    background-color: rgba(146, 172, 109, 0.3);
+    min-height: 800px;
+}
+
+
+.container-item-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: hidden;
+    block-size: fit-content;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+
+
+/*END of sort and filter CSS */
+
+
+
+.main-container {
+    /* display flex and wrap */
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    margin: 1% 2%;
+    text-decoration: none;
+    background: #ffffff;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+    color: #0A3A3F;
+    transform: scale(0.8);
+}
+
+.card a:after {
+    /* I copied this shit so idk what it means */
+    content: attr(title);
+    position: relative;
+
+}
+.card:hover{
+    transform: scale(0.8);
+    /* hover hover hover */
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    z-index: 10;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .7);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .7);
+}
+
+.card-body {
+    /* bring everything (img and text) to center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body a{
+    /* bring everything (img and text) to center */
+    text-decoration: none;
+    text-align: center;
+    color: #0A3A3F;
+}
+.card img {
+    margin-bottom: 1rem;
+    /* display: block; */
+}
+
+
+.card-indentify { 
+    /* Address and button add */
+    display: flex;
+    justify-content: space-around ;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    align-content: center;
+    /* position: relative; */
+}
+                                
+.card-indentify i:hover {
+    transform: scale(1.5);
+}

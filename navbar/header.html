@@ -1,23 +1,44 @@
-/* FONTS: font-family: 'EB Garamond', serif;
-font-family: 'Lato', sans-serif;
-font-family: 'League Gothic', sans-serif;
-font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif; */
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-/* COLOR COLLECTION:
-  Very nice a bitttttt dark night blue : #0A3A3F;
-  PURPLE NAVY: rgb(71, 82, 140);
-  Dark Blue-Gray: RGB: (102, 113, 168);
-  Light Pastel Purple: RGB: (171, 156, 209); Hex: #AB9CD1 ;
+<!-- Logo on the left side of the Navigator bar: -->
+<div class="navbar-logo">
+    <img src="https://drive.google.com/file/d/11O2XVkJ0ic_QDRIEFw2FWYfTHqHkV97c/view?usp=sharing" alt="Logo" />
+</div>
+  <!-- main list of Nav-bar at the center -->
 
+  <!-- <div class="navbar-menu"> -->
+    <ul class="menu-container">
+      <li class="navbar-menu-container-list">
+      <a href="./mainpage/index.html">Home</a>
+        </li>
+    
+        <li class="navbar-menu-container-list">
+        <a href="#features-section">Features</a>
+        </li>
+        
+        <li class="navbar-menu-container-list">
+        <a href="#whereToGo-section">Where to Go</a>
+        </li>
 
+        <li class="navbar-menu-container-list">
+        <a href="#footer">About us</a>
+        </li>
+    </ul>
+  <!-- </div> -->
+  
+  <div class="navbar-login-form">
+    <button type="button" class="btn btn-login">Login</button>
+    <button type="button" class="btn btn-register">Register</button>
+    <button type="button" class="btn btn-checklist">
+      <i class="fa-solid fa-motorcycle"></i></i>
+    </button>
+  </div>
+<!-- navbar -->
 
+  
 
-  */
-
-* {
+<style>
+    * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -129,7 +150,7 @@ body hr {
   backface-visibility: hidden;
   /* background-color: #72B081; */
   background-color: #FFF7D0;
-  margin-left: 5%;
+
   border-radius: 9px;
   border-style: none;
   color: #4d4e20;
@@ -142,6 +163,7 @@ body hr {
   outline: none;
   overflow: hidden;
   padding: 10px 15px;
+  /* position: relative; */
   margin-right: 0.1em;
   text-align: center;
   text-decoration: none;
@@ -158,6 +180,8 @@ body hr {
   background: rgba(61, 50, 50,0.9);
   color: white;
   font-style: bold;
+  /* background-color: #1e8449; */
+  /* opacity: 1; */
   transform: translateY(0);
   transition-duration: .35s;
 }
@@ -174,132 +198,5 @@ body hr {
   color:rgb(71, 82, 140);
 }
 
-.main-center {
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  /* background: rgba(188, 252, 213, 0.7); */
-}
-.main-content {
-  /* background-color: rgba(146, 172, 109, 0.3); */
-  background: rgb(252, 250, 206);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-}
-.main-about {
-  display: flex;
-  flex-direction: row;
-}
-.main-about h2 {
-  font-size: 2.7rem;
-  letter-spacing: 3px;
-}
-.paragraph {
-  display: block;
-  margin: auto;
-  padding: 3%;
-  color: #0A3A3F;
-}
-.main-about-img {
-  width: 50%;
-}
 
-/* style */
-
-.style-cover h2 {
-  text-align: center;
-  padding: 2%;
-  font-size: large;
-  font-weight: 600;
-  color: #0A3A3F;
-}
-.style-container {
-  /* float: left; */
-  display: flex;
-}
-.style-content {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin: auto;
-}
-
-.style-content .content-overlay {
-  background: rgba(51, 51, 51, 0.8);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.style-content img {
-  width: 100%;
-}
-
-.style-content:hover .content-overlay {
-  opacity: 1;
-}
-
-.content-detail {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.style-content:hover .content-detail{
-  opacity: 1;
-}
-
-.content-detail h4{
-  color: #fff;
-  font-size: 1.3em;
-  display: inline-block;
-  background: rgba(37, 37, 37, 0.95);
-  width: 100%;
-}
-
-.fadeIn {
-  top: 90%;
-}
-
-/* footer */
-
-.footer-bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1% 2% 1% 2%;
-  color: #0A3A3F;
-}
-
-.footer-link {
-  list-style-type: none;
-}
-.footer-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 100px;
-}
-
-.footer-link a {
-  text-decoration: none;
-  color: #4d4e20;
-}
-.footer-link i {
-  padding-right: 5%;
-  font-size: larger;
-}
-.about-us {
-  list-style-type: none;  
-}
+</style>
