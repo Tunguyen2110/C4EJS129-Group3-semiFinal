@@ -18,14 +18,14 @@
 
     <title>Dalatne</title>
   </head>
-<body>
-    <nav class="navbar">
-
-    </nav>
+  <body>
+    <nav class="navbar"></nav>
     <!-- sort and filter -------------------------------------------------------------- -->
     <div class="container-item-location">
       <ul class="container-item-location-ul">
-        <li class="container-item-location-li" id="li-1" onclick="ttat()">Phường 1</li>
+        <li class="container-item-location-li" id="li-1" onclick="ttat()">
+          Phường 1
+        </li>
         <li class="container-item-location-li">Phường 2</li>
         <li class="container-item-location-li">Phường 3</li>
         <li class="container-item-location-li">Phường 4</li>
@@ -42,20 +42,73 @@
         <li class="container-item-location-li">Xã Xuân Trường</li>
       </ul>
     </div>
-    <div class="container-item">
 
-
-
-  <!-- -------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------- -->
 
     <!-- cover everything inside -->
-    <div class="main-container" id="display-picture">
-      
+    <div class="main-container">
+          <!-- Card 1 -->
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#">
+                <img
+                  src="../media/mainpage/chungvienminhhoa.jpg"
+                  class="card-img-top"
+                  alt="chungVienMinhHoa"
+                />
+                <h5 class="card-title">Chủng viện Minh Hòa</h5>
+              </a>
+              <div class="card-indentify">
+                <p class="card-address">Đào Duy Từ - Phường 3</p>
+                <i class="bi bi-bookmark"></i>
+                <!-- <i class="bi bi-bookmark-fill"></i> -->
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#">
+                <img
+                  src="../media/mainpage/coffeedoimotnguoi.jpg"
+                  class="card-img-top"
+                  alt="Doc Nha Bo"
+                />
+                <h5 class="card-title">Đợi Một Người</h5>
+              </a>
+              <div class="card-indentify">
+                <p class="card-address">Tổ dân phố 63 - Phường 3</p>
+                <i class="bi bi-bookmark"></i>
+                <!-- <i class="bi bi-bookmark-fill"></i> -->
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#">
+                <img
+                  src="../media/mainpage/docnhohoai.jpg"
+                  class="card-img-top"
+                  alt="Doc Nha Bo"
+                />
+                <h5 class="card-title">Dốc Nhớ Hoài</h5>
+              </a>
+              <div class="card-indentify">
+                <p class="card-address">7 Hẻm Cầu Đúc - Phường 10</p>
+                <i class="bi bi-bookmark"></i>
+                <!-- <i class="bi bi-bookmark-fill"></i> -->
+              </div>
+            </div>
+          </div>
+          
     </div>
 
-    <footer id="footer" class="footer">
+    <div class="main-container" id="display-picture"></div>
 
-    </footer>
+    <footer id="footer" class="footer"></footer>
     <!-- link Javascript -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -74,5 +127,5 @@
     ></script>
 
     <script src="mainpage.js"></script>
-</body>
+  </body>
 </html>
