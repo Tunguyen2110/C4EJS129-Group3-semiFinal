@@ -14,8 +14,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <!-- CSS link CSS file -->
-    <link rel="stylesheet" href="./managepage.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
 
     <title>Dalatne - Manage</title>
   </head>
@@ -40,6 +43,7 @@
       </table>
 
       <div class="mb-3">
+        <input type="hidden" id="index" />
         <label class="form-label">Name - title</label>
         <input
           type="text"
@@ -67,15 +71,11 @@
         />
       </div>
 
-      <button id="add" class="btn btn-primary">Add Place</button>
-      <button id="update" class="btn btn-primary" style="display: none">
-        Update Place
-      </button>
+      <button id="submit" class="btn btn-primary">Add Place</button>
     </div>
 
     <!-- End of body -->
     <!-- link Javascript -->
-    <script src="managepage.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -91,5 +91,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    ></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>
