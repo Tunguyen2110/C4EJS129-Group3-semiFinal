@@ -50,14 +50,25 @@
           <!-- </div> -->
           
           <div class="navbar-login-form">
-            <button type="button" class="btn btn-login">Login</button>
-            <button type="button" class="btn btn-register">Register</button>
+            <button id="login-btn" type="button" class="btn btn-login">Login</button>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img src="./media/block.jpg" alt="nope">
+                  <p>Hold up, we haven't run this code... yet.</p>
+                </div>
+            </div>
           </div>
         <!-- navbar -->
 
     </div>
+
+    <!-- modal box -->
+
+
     <div class="video-container">
-        <video class="introvideo" autoplay loop controls src="./media/dalathoanghon.mp4">
+        <video class="introvideo" autoplay  controls src="./media/dalathoanghon.mp4">
         </video>
     </div>
     <!-- end of navbar -->
@@ -136,7 +147,7 @@
             <div class="style-container">
                 
                 <div class="style-content">
-                    <a href="#">
+                    <a href="./mainpage/index.html">
                         <div class="content-overlay"> </div>
                         <img src="./media/landing-page/doitroc.jpg" alt="explore">
                         <div class="content-detail fadeIn">
@@ -146,7 +157,7 @@
                 </div>
 
                 <div class="style-content">
-                    <a href="#">
+                    <a href="./mainpage/index.html">
                         <div class="content-overlay"> </div>
                         <img src="./media/landing-page/chenhcoffee.jpg" alt="explore">
                         <div class="content-detail fadeIn">
@@ -156,7 +167,7 @@
                 </div>
 
                 <div class="style-content">
-                    <a href="#">
+                    <a href="./mainpage/index.html">
                         <div class="content-overlay"> </div>
                         <img src="./media/landing-page/homestay.jpg" alt="explore">
                         <div class="content-detail fadeIn">
@@ -195,10 +206,13 @@
 
             </ul>
             <ul class="about-us">
-                <li><h4>About Us</h4></li>
-                <li>We love Da Lat, that's all</li>
-                <li>Người ta cứ mãi đi tìm thành công ở SG, Hà Nội</li>
-                <li>Nhưng rồi ai cũng đến Đà Lạt để tìm bình yên</li>
+                <li><h3>About Us</h3></li>
+                <li>Đây là thành phẩm của những kẻ mộng mơ</li>
+                <li>Website được hoàn thiện với sự hỗ trợ nhiệt tình của: <br>
+                    Tài liệu của <b>MindX</b>  <br>
+                    Mentor <b>Tiến Dũng</b> <br>
+                    Giảng viên <b>Định</b>
+                </li>
             </ul>
         </div>
     </footer>
