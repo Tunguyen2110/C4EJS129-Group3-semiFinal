@@ -15,11 +15,90 @@
     />
     <!-- CSS link CSS file -->
     <link rel="stylesheet" href="./mainpage.css" />
-
+    <link rel="stylesheet" href="../form.css" />
     <title>Dalatne</title>
   </head>
   <body>
-    <nav class="navbar"></nav>  
+    <!-- navbar -->
+
+    <div class="header" id="header">
+      <div class="navbar">
+          <!-- Logo on the left side of the Navigator bar: -->
+        <div class="navbar-logo">
+          <img src="../media/Logo-Dalatne-05.svg" alt="Logo" />
+        </div>
+        <!-- main list of Nav-bar at the center -->
+        <!-- <div class="navbar-menu"> -->
+          <ul class="menu-container">
+            <li class="navbar-menu-container-list">
+            <a href="./mainpage/index.html">Home</a>
+          </li>
+          
+          <li class="navbar-menu-container-list">
+            <a href="#features-section">Features</a>
+          </li>
+          
+          <li class="navbar-menu-container-list">
+            <a href="#whereToGo-section">Where to Go</a>
+          </li>
+
+          <li class="navbar-menu-container-list">
+            <a href="#footer">About us</a>
+          </li>
+        </ul>
+        <!-- </div> -->
+        
+        <div class="navbar-login-form" id="navbar-login-form">
+          <button type="button" class="btn btn-login" id="ln" onclick="openFormLogin()">Login</button>
+          <div class="form-popup" id="myForm" >
+              <form  class="form-container" id="ln">
+                  <div class="left-login">
+                      <img src="../media/spck/ham2.jpg" class="form-img-login">
+                  </div>
+                  <div class="right-login">
+                      <h1>Login</h1>
+      
+                      <label for="email" style="display:block"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+                      <label for="psw" style="display:block"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+      
+                      <button type="button" class="btn" id="login_submit">Login</button>
+                      <p> Chưa có tài khoản,</p>
+                      <a onclick="switchToRegister()">đăng ký ngay.</a>
+                      <button type="button" class="btn cancel" onclick="closeFormLogin()"><i class='bx bxs-x-circle'
+                              style="color: red;"></i></button>
+                  </div>
+              </form>
+          </div>
+          <button type="button" class="btn btn-register" id="reg" onclick="openFormRegister()">Register</button>
+          <div class="form-popup-register" id="myForm-register">
+              <form  class="form-container-register" >
+                  <div class="left-register">
+                      <img src="../media/spck/lac_tien_goi_3.jpg" class="form-img-register">
+                  </div>
+                  <div class="right-register">
+                      <h1>Register</h1>
+      
+                      <label for="email" style="display:block"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" id="email+" required>
+      
+                      <label for="psw" style="display:block"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" id="psw+" required>
+      
+                      <button type="button" class="btn" id="register_submit">Register</button>
+                      <p> Đã có tài khoản,</p>
+                      <a onclick="switchToLogin()">đăng nhập ngay.</a>
+                      <button type="button" class="btn cancel" onclick="closeFormRegister()"><i class='bx bxs-x-circle'
+                              style="color: red;"></i></button>
+                  </div>
+              </form>
+          </div>
+          <button type="button" class="btn btn-checklist"><i class="bi bi-card-checklist"></i></button>
+      </div>
+    </div>
+      <!-- navbar --> 
 
     <!-- sort and filter -------------------------------------------------------------- -->
     <div id="myBtn" class="container-item-location">
